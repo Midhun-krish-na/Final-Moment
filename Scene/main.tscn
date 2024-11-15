@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://5fpw6pex8lef"]
+
+[ext_resource type="PackedScene" uid="uid://byg3qfdfucoc3" path="res://Scene/Shadow.tscn" id="1_xkroh"]
+[ext_resource type="PackedScene" uid="uid://dablqf50gb8nj" path="res://Scene/ground.tscn" id="2_tyfww"]
+[ext_resource type="PackedScene" uid="uid://b54gno6to2t3u" path="res://Scene/spawner.tscn" id="3_n24jw"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_xkroh")]
+position = Vector2(552, 459)
+
+[node name="floor" parent="." instance=ExtResource("2_tyfww")]
+position = Vector2(505, 644)
+
+[node name="Spawner" parent="." instance=ExtResource("3_n24jw")]
+position = Vector2(24, 446)
