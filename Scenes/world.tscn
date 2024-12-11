@@ -1,0 +1,106 @@
+[gd_scene load_steps=12 format=3 uid="uid://bkj2u6ojsfmaq"]
+
+[ext_resource type="Texture2D" uid="uid://bxoc3vmffaj3i" path="res://Assets/Ground/Ground068_2K-JPG_Color.jpg" id="1_nanpk"]
+[ext_resource type="PackedScene" uid="uid://bcr5mjb5wv60f" path="res://Scenes/grave.tscn" id="2_lj2q1"]
+[ext_resource type="PackedScene" uid="uid://kbn6vjlw1115" path="res://Scenes/fence.tscn" id="3_op30m"]
+[ext_resource type="PackedScene" uid="uid://co1vox6b17dw3" path="res://Scenes/Chruch.tscn" id="4_3shpc"]
+[ext_resource type="PackedScene" uid="uid://blk6ngvs7au8g" path="res://Scenes/user_interface.tscn" id="5_v5s2g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k1x12"]
+albedo_texture = ExtResource("1_nanpk")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_a6a72"]
+frequency = 0.0353
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_chx14"]
+seamless = true
+seamless_blend_skirt = 1.0
+noise = SubResource("FastNoiseLite_a6a72")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ba1x2"]
+sky_top_color = Color(0.0351131, 0.267802, 0.528793, 1)
+sky_horizon_color = Color(0.941519, 0.540329, 0.125471, 1)
+sky_cover = SubResource("NoiseTexture2D_chx14")
+sky_cover_modulate = Color(0.688104, 0.581513, 0.456701, 1)
+ground_bottom_color = Color(0.412811, 0.562861, 0.757592, 1)
+ground_horizon_color = Color(0.90071, 0.56727, 0.210034, 1)
+sun_angle_max = 20.18
+
+[sub_resource type="Sky" id="Sky_xy5f5"]
+sky_material = SubResource("ProceduralSkyMaterial_ba1x2")
+process_mode = 2
+
+[sub_resource type="Environment" id="Environment_rqjpy"]
+background_mode = 2
+sky = SubResource("Sky_xy5f5")
+ambient_light_source = 3
+ambient_light_color = Color(0.95812, 0.469656, 0.239227, 1)
+ambient_light_sky_contribution = 0.12
+ambient_light_energy = 0.5
+tonemap_exposure = 0.5
+tonemap_white = 1.5
+sdfgi_bounce_feedback = 0.95
+sdfgi_min_cell_size = 0.0015625
+sdfgi_cascade0_distance = 0.1
+sdfgi_max_distance = 1.6
+fog_light_color = Color(0.72817, 0.421656, 0.28613, 1)
+fog_light_energy = 0.0
+fog_sun_scatter = 0.05
+fog_aerial_perspective = 0.1
+fog_height = 10.0
+fog_height_density = 0.128
+fog_depth_end = 1610.0
+volumetric_fog_density = 0.218
+volumetric_fog_emission_energy = 0.1
+volumetric_fog_anisotropy = 0.13
+volumetric_fog_length = 12.8
+volumetric_fog_detail_spread = 0.82111
+volumetric_fog_ambient_inject = 2.18
+volumetric_fog_sky_affect = 0.358
+adjustment_enabled = true
+
+[node name="World" type="Node3D"]
+
+[node name="map" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="map"]
+material_override = SubResource("StandardMaterial3D_k1x12")
+use_collision = true
+size = Vector3(100, 0.01, 100)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="map"]
+environment = SubResource("Environment_rqjpy")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="map"]
+transform = Transform3D(1, 0, 0, 0, -0.866025, 0.5, 0, -0.5, -0.866025, 0, 23, 72)
+light_energy = 1.82
+light_angular_distance = 1.28
+shadow_enabled = true
+shadow_blur = 0.0
+
+[node name="Walls" type="Node3D" parent="."]
+
+[node name="Church" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19.6472, 0, -35.0439)
+
+[node name="Grave" type="Node3D" parent="Church"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.91235, 0, -4.50909)
+
+[node name="fence" parent="Church/Grave" instance=ExtResource("3_op30m")]
+transform = Transform3D(0.0855213, 0, 0.996336, 0, 1, 0, -0.996336, 0, 0.0855213, -2.7127, 0, -2.87853)
+
+[node name="Grave" parent="Church/Grave" instance=ExtResource("2_lj2q1")]
+transform = Transform3D(-0.0217102, 0, -0.999764, 0, 1, 0, 0.999764, 0, -0.0217102, -1.48775, 0, -3.69689)
+
+[node name="Grave2" parent="Church/Grave" instance=ExtResource("2_lj2q1")]
+transform = Transform3D(0.0588708, 0, 0.998266, 0, 1, 0, -0.998266, 0, 0.0588708, 1.03338, 0, -4.42541)
+
+[node name="Grave3" parent="Church/Grave" instance=ExtResource("2_lj2q1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.96046e-08, 0, -4.76837e-07)
+
+[node name="Chruch" parent="Church" instance=ExtResource("4_3shpc")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 1.42067, 0, 6.55273)
+
+[node name="User Interface" parent="." instance=ExtResource("5_v5s2g")]
