@@ -9,7 +9,7 @@ height = 0.992435
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_y16tb"]
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("Camera_Controller")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, 0)
 floor_max_angle = 1.0472
 script = ExtResource("1_rurr5")
 Camera_Controller = NodePath("Cameraplaceholder/Camera3D")
@@ -26,6 +26,7 @@ skeleton = NodePath("../..")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.455044, -0.217112)
 
 [node name="Camera3D" type="Camera3D" parent="Cameraplaceholder"]
+far = 1000.0
 
 [node name="ReflectionProbe" type="ReflectionProbe" parent="Cameraplaceholder/Camera3D"]
 update_mode = 1

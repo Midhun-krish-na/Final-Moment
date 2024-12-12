@@ -8,4 +8,4 @@
 [node name="World" parent="." instance=ExtResource("1_pe3qc")]
 
 [node name="Player" parent="." instance=ExtResource("2_hy1qh")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.246262, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.286434, 0)

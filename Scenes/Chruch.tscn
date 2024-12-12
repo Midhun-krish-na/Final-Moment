@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://co1vox6b17dw3"]
 
-[ext_resource type="PackedScene" uid="uid://bj31psndgcoj2" path="res://Assets/Church/crypt.glb" id="1_jx35o"]
-[ext_resource type="PackedScene" uid="uid://dukxwgpw0sri4" path="res://Assets/Church/crypt-door.glb" id="2_ho63f"]
-[ext_resource type="PackedScene" uid="uid://p5s1612i0fp1" path="res://Assets/Church/crypt-small-entrance.glb" id="3_ehqxv"]
-[ext_resource type="PackedScene" uid="uid://p0uwwh22px1h" path="res://Assets/Church/cross.glb" id="4_fnjax"]
+[ext_resource type="PackedScene" uid="uid://bj31psndgcoj2" path="res://Assets/Grave_yard/Church/crypt.glb" id="1_jx35o"]
+[ext_resource type="PackedScene" uid="uid://dukxwgpw0sri4" path="res://Assets/Grave_yard/Church/crypt-door.glb" id="2_ho63f"]
+[ext_resource type="PackedScene" uid="uid://p5s1612i0fp1" path="res://Assets/Grave_yard/Church/crypt-small-entrance.glb" id="3_ehqxv"]
+[ext_resource type="PackedScene" uid="uid://p0uwwh22px1h" path="res://Assets/Grave_yard/Church/cross.glb" id="4_fnjax"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5evdg"]
 albedo_color = Color(0.601223, 0.601223, 0.601223, 1)

@@ -15,12 +15,12 @@ func _ready() -> void:
 	queue_redraw()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 func _draw():
 	draw_circle(Vector2(0,0), DOt_Radius, DOt_Color)
 
-func adjust_reticle_line():
+func _adjust_reticle_line():
 	var vel = Player_Controller.get_real_velocity()
 	var orgin = Vector3(0,0,0)
 	var pos = Vector2(0,0)

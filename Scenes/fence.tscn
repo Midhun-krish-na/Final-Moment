@@ -1,10 +1,10 @@
 [gd_scene load_steps=34 format=3 uid="uid://kbn6vjlw1115"]
 
-[ext_resource type="PackedScene" uid="uid://5r18ariylymh" path="res://Assets/Fence/iron-fence-border-column.glb" id="1_sw0ll"]
-[ext_resource type="PackedScene" uid="uid://cusfeeknrep7l" path="res://Assets/Fence/iron-fence-border-curve.glb" id="2_t6l6r"]
-[ext_resource type="PackedScene" uid="uid://dejtxkef88n3j" path="res://Assets/Fence/iron-fence-border.glb" id="3_u2vpb"]
-[ext_resource type="PackedScene" uid="uid://bdpdwwhkk4jg1" path="res://Assets/Fence/iron-fence-damaged.glb" id="4_uscxm"]
-[ext_resource type="PackedScene" uid="uid://gl51vl17gfko" path="res://Assets/Fence/iron-fence-bar.glb" id="5_lsq52"]
+[ext_resource type="PackedScene" uid="uid://5r18ariylymh" path="res://Assets/Grave_yard/Fence/iron-fence-border-column.glb" id="1_sw0ll"]
+[ext_resource type="PackedScene" uid="uid://cusfeeknrep7l" path="res://Assets/Grave_yard/Fence/iron-fence-border-curve.glb" id="2_t6l6r"]
+[ext_resource type="PackedScene" uid="uid://dejtxkef88n3j" path="res://Assets/Grave_yard/Fence/iron-fence-border.glb" id="3_u2vpb"]
+[ext_resource type="PackedScene" uid="uid://bdpdwwhkk4jg1" path="res://Assets/Grave_yard/Fence/iron-fence-damaged.glb" id="4_uscxm"]
+[ext_resource type="PackedScene" uid="uid://gl51vl17gfko" path="res://Assets/Grave_yard/Fence/iron-fence-bar.glb" id="5_lsq52"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3oifu"]
 albedo_color = Color(0.396889, 0.396889, 0.396889, 1)
