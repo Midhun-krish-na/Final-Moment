@@ -17,7 +17,7 @@ config/features=PackedStringArray("4.3", "Forward Plus")
 run/max_fps=60
 run/low_processor_mode=true
 boot_splash/bg_color=Color(1, 1, 1, 1)
-boot_splash/image="res://Icons/Final Moment (1).png"
+boot_splash/image="res://Icons/Final Moment.png"
 config/icon="res://Icons/fianal moment.webp"
 boot_splash/minimum_display_time=300
 

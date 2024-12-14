@@ -1,0 +1,161 @@
+[gd_scene load_steps=10 format=3 uid="uid://d35rf5xycprn6"]
+
+[ext_resource type="PackedScene" uid="uid://dywo46e8a4pn3" path="res://Assets/Grave_yard/Grave/grave.glb" id="1_k5e5v"]
+[ext_resource type="PackedScene" uid="uid://6od78amq5x3t" path="res://Assets/Grave_yard/Grave/gravestone-broken.glb" id="2_eexjj"]
+[ext_resource type="PackedScene" uid="uid://bgftf0dj1liuq" path="res://Assets/Grave_yard/Pine/pine-crooked.glb" id="3_1ilpg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0fpyw"]
+albedo_color = Color(0.631066, 0.399159, 0.244121, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sdfay"]
+points = PackedVector3Array(0.28657, 0, -0.501511, 0.263736, 0, -0.540958, 0.255994, 0.0217078, -0.52755, 0.27103, 0.0217078, -0.501511, 0.183286, 0.09522, 0.284551, 0.229963, 0, 0.379513, 0.0433109, 0, -0.566, 0.0433109, 0.09522, -0.424611, 0.142275, 0.09522, -0.383612, 0.183286, 0.09522, -0.284773, 0.142275, 0.09522, 0.383502, 0.175263, 0, 0.511372, -0.0886415, 0, -0.511483, -0.0556534, 0.09522, -0.383612, 0.0433109, 0.09522, 0.424389, 0.0433109, 0, 0.566, -0.143285, 0, -0.379623, -0.0966641, 0.09522, -0.284773, -0.0556534, 0.09522, 0.383502, -0.172009, 0.0217078, 0.54672, -0.141939, 0.0217078, 0.54672, -0.179808, 0, 0.560127, -0.28657, 0, 0.175296, -0.271086, 0.0217078, 0.175296, -0.0966641, 0.09522, 0.284551, -0.187101, 0.0217078, 0.520791, -0.202585, 0, 0.520791)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_47ssr"]
+albedo_color = Color(0.439049, 0.439049, 0.439049, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dx1cb"]
+points = PackedVector3Array(-0.144438, 0.358046, 0.0665052, -0.144438, 0.358046, -0.0665513, -0.173576, 0.358046, 0.0665052, 0.115036, 0.0399932, 0.220174, 0.173501, 0.316265, 0.0665052, -0.173576, 0.358046, -0.0665513, 0.173501, 0.316265, -0.0665513, 0.194973, 0.0779885, -0.07475, -0.195, 0.0779885, 0.0747328, 0.115036, 0, 0.220174, 0.219349, 0.0399932, 0.178863, 0.291383, 0.0399932, 0.121587, -0.195, 0.0779885, -0.07475, 0.194973, 0, -0.07475, -0.195, 0, 0.0747328, 0.219349, 0, 0.178863, 0.291383, 0, 0.121587, -0.195, 0, -0.07475)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qicgr"]
+albedo_color = Color(0.163884, 0.334358, 0.170836, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6sn5r"]
+points = PackedVector3Array(0.0234293, 0.292859, 0.667279, -0.552474, 0.244381, 0.333509, -0.106069, 0, 0.183541, 0.105931, 0, 0.183541, 0.599218, 0.341137, 0.333509, 0.310232, 0.395798, 0.509995, 0.214861, 1.04735, 0.324364, 0.0353794, 0.973935, 0.42443, -0.0385045, 1.3442, 0.322535, -0.0256351, 0.679879, 0.540433, -0.258088, 0.749902, 0.413065, -0.276702, 0.346523, 0.509995, -0.570055, 0.321786, -0.000130653, -0.552474, 0.244381, -0.33377, -0.212126, 0, -0.000130653, -0.491115, 0.728756, 0.270151, 0.211988, 0, -0.000130653, 0.599218, 0.341137, -0.33377, 0.603814, 0.420336, -0.000130653, 0.400088, 1.02062, 0.21215, 0.0344601, 2.03804, -0.000130653, 0.10708, 1.36714, 0.246506, -0.176161, 1.39686, 0.246506, -0.495366, 0.774839, -0.000130653, -0.491115, 0.728756, -0.270282, -0.276702, 0.346523, -0.510126, 0.0234293, 0.292859, -0.667279, -0.106069, 0, -0.183671, -0.316345, 1.37352, 0.161202, -0.317723, 1.41183, -0.000130653, 0.105931, 0, -0.183671, 0.310232, 0.395798, -0.510126, 0.400088, 1.02062, -0.21228, 0.400777, 1.07109, -0.000130653, 0.10708, 1.36714, -0.246768, -0.0385045, 1.3442, -0.322666, -0.176161, 1.39686, -0.246768, -0.316345, 1.37352, -0.161333, 0.214861, 1.04735, -0.324626, -0.258088, 0.749902, -0.413195, -0.0256351, 0.679879, -0.540564, 0.0353794, 0.973935, -0.424561)
+
+[node name="For_Grave" type="Node3D"]
+
+[node name="grave2" parent="." instance=ExtResource("1_k5e5v")]
+
+[node name="grave" parent="grave2" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_0fpyw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="grave2/grave" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="grave2/grave/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4373e-06, 0, 4.76837e-07)
+shape = SubResource("ConvexPolygonShape3D_sdfay")
+
+[node name="gravestone-broken2" parent="." instance=ExtResource("2_eexjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="gravestone-broken" parent="gravestone-broken2" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_47ssr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="gravestone-broken2/gravestone-broken" index="0"]
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="gravestone-broken2/gravestone-broken/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.76837e-07, 0, -5.96046e-06)
+shape = SubResource("ConvexPolygonShape3D_dx1cb")
+
+[node name="pine-crooked2" parent="." instance=ExtResource("3_1ilpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="pine-crooked" parent="pine-crooked2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.710548, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_qicgr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pine-crooked2/pine-crooked" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine-crooked2/pine-crooked/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6sn5r")
+
+[node name="pine-crooked3" parent="." instance=ExtResource("3_1ilpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.03128, 0, -0.990127)
+
+[node name="pine-crooked" parent="pine-crooked3" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qicgr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pine-crooked3/pine-crooked" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine-crooked3/pine-crooked/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6sn5r")
+
+[node name="pine-crooked4" parent="." instance=ExtResource("3_1ilpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.53941, 0, 0.819352)
+
+[node name="pine-crooked" parent="pine-crooked4" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qicgr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pine-crooked4/pine-crooked" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine-crooked4/pine-crooked/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6sn5r")
+
+[node name="pine-crooked5" parent="." instance=ExtResource("3_1ilpg")]
+transform = Transform3D(-0.996699, 0, 0.0811905, 0, 1, 0, -0.0811905, 0, -0.996699, 0.158998, 0, 2.66235)
+
+[node name="pine-crooked" parent="pine-crooked5" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.710548, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_qicgr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pine-crooked5/pine-crooked" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine-crooked5/pine-crooked/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6sn5r")
+
+[node name="pine-crooked6" parent="." instance=ExtResource("3_1ilpg")]
+transform = Transform3D(-0.996699, 0, 0.0811905, 0, 1, 0, -0.0811905, 0, -0.996699, -1.78358, 0, 1.49089)
+
+[node name="pine-crooked" parent="pine-crooked6" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qicgr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pine-crooked6/pine-crooked" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine-crooked6/pine-crooked/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6sn5r")
+
+[node name="pine-crooked7" parent="." instance=ExtResource("3_1ilpg")]
+transform = Transform3D(-0.996699, 0, 0.0811905, 0, 1, 0, -0.0811905, 0, -0.996699, -3.13982, 0, -0.43506)
+
+[node name="pine-crooked" parent="pine-crooked7" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qicgr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pine-crooked7/pine-crooked" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine-crooked7/pine-crooked/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6sn5r")
+
+[node name="pine-crooked8" parent="." instance=ExtResource("3_1ilpg")]
+transform = Transform3D(-0.996699, 0, 0.0811905, 0, 1, 0, -0.0811905, 0, -0.996699, -1.49667, 0, 4.13053)
+
+[node name="pine-crooked" parent="pine-crooked8" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qicgr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pine-crooked8/pine-crooked" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine-crooked8/pine-crooked/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6sn5r")
+
+[node name="pine-crooked9" parent="." instance=ExtResource("3_1ilpg")]
+transform = Transform3D(-0.996699, 0, 0.0811905, 0, 1, 0, -0.0811905, 0, -0.996699, 3.50657, 0, 4.13053)
+
+[node name="pine-crooked" parent="pine-crooked9" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qicgr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pine-crooked9/pine-crooked" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine-crooked9/pine-crooked/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6sn5r")
+
+[node name="pine-crooked10" parent="." instance=ExtResource("3_1ilpg")]
+transform = Transform3D(-0.996699, 0, 0.0811905, 0, 1, 0, -0.0811905, 0, -0.996699, 1.96998, 0, -3.92862)
+
+[node name="pine-crooked" parent="pine-crooked10" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qicgr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pine-crooked10/pine-crooked" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine-crooked10/pine-crooked/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6sn5r")
+
+[editable path="grave2"]
+[editable path="gravestone-broken2"]
+[editable path="pine-crooked2"]
+[editable path="pine-crooked3"]
+[editable path="pine-crooked4"]
+[editable path="pine-crooked5"]
+[editable path="pine-crooked6"]
+[editable path="pine-crooked7"]
+[editable path="pine-crooked8"]
+[editable path="pine-crooked9"]
+[editable path="pine-crooked10"]
