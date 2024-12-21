@@ -19,19 +19,19 @@ func _ready() -> void:
 	add_child(click_sound)
 
 #Connect Button Signals
-	$VBoxContainer/StartButton.connect("pressed", _on_start_pressed)
-	$VBoxContainer/StartButton.connect("pressed", _on_continue_pressed)
-	$VBoxContainer/StartButton.connect("pressed", _on_settings_pressed)
-	$VBoxContainer/StartButton.connect("pressed", _on_credits_pressed)
-	$VBoxContainer/StartButton.connect("pressed",_on_quit_pressed )
+	$ButtonContainer/StartButton.connect("pressed", _on_start_pressed)
+	$ButtonContainer/ContinueButton.connect("pressed", _on_continue_pressed)
+	$ButtonContainer/SettingButton.connect("pressed", _on_settings_pressed)
+	$ButtonContainer/CreditButton.connect("pressed", _on_credits_pressed)
+	$ButtonContainer/QuitButton.connect("pressed",_on_quit_pressed )
 
 	#Conect Hover signals for all buttons
-	for button in $VBoxContainer.get_children():
+	for button in $ButtonContainer.get_children():
 		button.connect("mouse_entered", _on_button_hover)
 
 func _on_start_pressed():
 	click_sound.play()
-	#get_tree().change_scene_to_packed(game_scene)
+	get_tree().change_scene_to_packed(game_sc)
 	pass
 	
 
@@ -42,12 +42,12 @@ func _on_continue_pressed():
 
 func _on_settings_pressed():
 	click_sound.play()
-	#get_tree().change_scene_to_packed(settings_scene)
+	get_tree().change_scene_to_packed(setting_sc)
 	pass
 	
 func _on_credits_pressed():
 	click_sound.play()
-	#get_tree().change_scene_to_packed(credits_scene)
+	get_tree().change_scene_to_packed(credits_sc)
 	pass
 	
 func _on_quit_pressed():
