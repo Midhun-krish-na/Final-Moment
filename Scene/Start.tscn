@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://ciepr7w7hadjj"]
+
+[ext_resource type="PackedScene" uid="uid://cx3i7tqy5lpkb" path="res://Scene/world.tscn" id="1_67kjs"]
+[ext_resource type="Script" path="res://Script/start.gd" id="1_r5j1r"]
+[ext_resource type="PackedScene" uid="uid://1xdm5fgj6ukm" path="res://Scene/main.tscn" id="2_mircd"]
+
+[node name="start" type="Node3D"]
+script = ExtResource("1_r5j1r")
+MainMenu = ExtResource("2_mircd")
+
+[node name="World" parent="." instance=ExtResource("1_67kjs")]
+
+[node name="UI\'s" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BoxContainer" type="BoxContainer" parent="UI\'s"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 370.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI\'s/BoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI\'s/BoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Resume" type="Button" parent="UI\'s/BoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume
+"
+
+[node name="MainMenu" type="Button" parent="UI\'s/BoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="SaveExit" type="Button" parent="UI\'s/BoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Save & Exit"
+
+[node name="Settings" type="Button" parent="UI\'s/BoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[node name="Exit" type="Button" parent="UI\'s/BoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Exit"
