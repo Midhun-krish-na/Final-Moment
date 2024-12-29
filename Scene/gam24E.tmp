@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0k4h7mx0ga34"]
+
+[ext_resource type="Script" path="res://Script/start.gd" id="1_ci7t0"]
+[ext_resource type="PackedScene" uid="uid://cx3i7tqy5lpkb" path="res://Scene/world.tscn" id="2_n7r3q"]
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_ci7t0")
+
+[node name="World" parent="." instance=ExtResource("2_n7r3q")]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ID" type="BoxContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -34.0
+offset_right = 4.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+vertical = true
+
+[node name="Resume" type="Button" parent="UI/ID"]
+layout_mode = 2
+text = "Resume
+"
+
+[node name="MainMenu" type="Button" parent="UI/ID"]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="Settings" type="Button" parent="UI/ID"]
+layout_mode = 2
+text = "Settings"
+
+[node name="Save" type="Button" parent="UI/ID"]
+layout_mode = 2
+text = "Save"
+
+[node name="SaveExit" type="Button" parent="UI/ID"]
+layout_mode = 2
+text = "Save & Exit"

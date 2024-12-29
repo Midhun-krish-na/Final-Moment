@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfh4r0y6sclud"]
+
+[ext_resource type="Script" path="res://Script/game_start.gd" id="1_xvlro"]
+[ext_resource type="PackedScene" uid="uid://cx3i7tqy5lpkb" path="res://Scene/world.tscn" id="2_3315v"]
+
+[node name="Game_start" type="Node3D"]
+script = ExtResource("1_xvlro")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="World" parent="." instance=ExtResource("2_3315v")]

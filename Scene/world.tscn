@@ -620,4 +620,4 @@ transform = Transform3D(-6.55671e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.55671e-08, 
 [node name="Mobs" type="Node3D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("11_w8v4q")]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0.485156, 0.553293, 1.7556)
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0.485, 0.35, 1.756)

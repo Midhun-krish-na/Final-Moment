@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3r6oib0yyici"]
+
+[ext_resource type="Script" path="res://Script/main_screen.gd" id="1_57vjf"]
+[ext_resource type="PackedScene" uid="uid://cfh4r0y6sclud" path="res://Scene/game_start.tscn" id="2_7peak"]
+[ext_resource type="PackedScene" uid="uid://b7y12mx30sy1r" path="res://Scene/setting.tscn" id="3_5clge"]
+[ext_resource type="PackedScene" uid="uid://bh3bx767gtaym" path="res://Scene/credit.tscn" id="4_p1j6d"]
+
+[node name="MainScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_57vjf")
+game_sc = ExtResource("2_7peak")
+setting_sc = ExtResource("3_5clge")
+credits_sc = ExtResource("4_p1j6d")
+
+[node name="ButtonContainer" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.5
+offset_top = -85.5
+offset_right = 39.5
+offset_bottom = 85.5
+grow_horizontal = 2
+grow_vertical = 2
+vertical = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Start" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="Continue" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Continue"
+
+[node name="Setting" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Setting"
+
+[node name="Credit" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Credit"
+
+[node name="Quit" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Quit"
